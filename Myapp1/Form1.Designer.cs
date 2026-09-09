@@ -58,6 +58,8 @@
             // 
             // TimeReloj
             // 
+            TimeReloj.Enabled = true;
+            TimeReloj.Interval = 1000;
             TimeReloj.Tick += TimeReloj_Tick;
             // 
             // lbEjecucion
@@ -71,7 +73,7 @@
             // 
             // btnEncender
             // 
-            btnEncender.Location = new Point(336, 176);
+            btnEncender.Location = new Point(89, 361);
             btnEncender.Name = "btnEncender";
             btnEncender.Size = new Size(112, 34);
             btnEncender.TabIndex = 3;
