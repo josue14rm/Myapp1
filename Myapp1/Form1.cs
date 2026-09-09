@@ -8,6 +8,7 @@ namespace Myapp1
         bool save = false;
         bool cambios = false;
 
+        int contador = 0, minutos = 0;
         String path;
 
         public Form1()
@@ -57,6 +58,18 @@ namespace Myapp1
                 Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
                 guardarToolStripMenuItem.Enabled = false;
 
+                contador++;
+                DateTime tiempo = DateTime.Now;
+                lbReloj.Text = DateTime.Now.ToString("HH:mm:ss");
+                lbFecha.Text = tiempo.ToString("dd-MM-yyyy");
+                if (contador == 30)
+                {
+                    contador = 0;
+                    path = Guardar.FileName;
+                    save = true;
+                }
+            }
+                
 
             }
         }
