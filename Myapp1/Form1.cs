@@ -85,19 +85,25 @@ namespace Myapp1
             {
                 contador++;
                 if (contador == 30)
-                {       
+                {
                     if (path != null)
                     {
                         Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
-                        toolStripStatusLabel1.Text = "ARCHIVO GUARDADO";
+
+                        toolStripStatusLabel2.Visible=true;
                     }
                     contador = 0;
-                    
+
                 }
             }
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
