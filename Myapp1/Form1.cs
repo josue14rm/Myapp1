@@ -58,20 +58,12 @@ namespace Myapp1
                 Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
                 guardarToolStripMenuItem.Enabled = false;
 
-                contador++;
-                
-                
-                if (contador == 30)
-                {
-                    contador = 0;
-                    path = Guardar.FileName;
-                    save = true;
-                }
+
             }
-                
+
 
         }
-        
+
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -81,6 +73,32 @@ namespace Myapp1
         private void Texto_TextChanged(object sender, EventArgs e)
         {
             cambios = true;
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+        }
+
+        private void timerReloj_Tick(object sender, EventArgs e)
+        {
+            if (save == false)
+            {
+                if (contador == 30)
+                {
+                    contador++;
+                    if (path != null)
+                    {
+                        Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
+                        toolStripStatusLabel1.Text = "ARCHIVO GUARDADO";
+                    }
+                    contador = 0;
+                }
+            }
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
