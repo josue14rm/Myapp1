@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             archivoToolStripMenuItem = new ToolStripMenuItem();
             configurarAlarmaToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
             timerReloj = new System.Windows.Forms.Timer(components);
             lb1 = new Label();
+            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -54,18 +57,19 @@
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             archivoToolStripMenuItem.Size = new Size(88, 29);
             archivoToolStripMenuItem.Text = "Archivo";
+            archivoToolStripMenuItem.Click += archivoToolStripMenuItem_Click;
             // 
             // configurarAlarmaToolStripMenuItem
             // 
             configurarAlarmaToolStripMenuItem.Name = "configurarAlarmaToolStripMenuItem";
-            configurarAlarmaToolStripMenuItem.Size = new Size(259, 34);
+            configurarAlarmaToolStripMenuItem.Size = new Size(270, 34);
             configurarAlarmaToolStripMenuItem.Text = "Configurar Alarma";
             configurarAlarmaToolStripMenuItem.Click += configurarAlarmaToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(259, 34);
+            salirToolStripMenuItem.Size = new Size(270, 34);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -85,11 +89,22 @@
             lb1.TabIndex = 2;
             lb1.Text = "0";
             // 
+            // axWindowsMediaPlayer1
+            // 
+            axWindowsMediaPlayer1.Enabled = true;
+            axWindowsMediaPlayer1.Location = new Point(532, 229);
+            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+            axWindowsMediaPlayer1.Size = new Size(238, 121);
+            axWindowsMediaPlayer1.TabIndex = 3;
+            axWindowsMediaPlayer1.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(axWindowsMediaPlayer1);
             Controls.Add(lb1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -97,6 +112,7 @@
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -109,5 +125,6 @@
         private ToolStripMenuItem archivoToolStripMenuItem;
         private ToolStripMenuItem configurarAlarmaToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

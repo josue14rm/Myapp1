@@ -29,8 +29,14 @@ namespace Myapp1
             lb1.Text = DateTime.Now.ToLongTimeString();
             if (DateTime.Now.ToLongTimeString() == tiempo.ToLongTimeString())
             {
-                Console.Beep(1000, 200);
+                axWindowsMediaPlayer1.URL = @"C:\Users\RMJosue14\Downloads\dragon-studio-rooster-crowing-364473.mp3";
+                axWindowsMediaPlayer1.Ctlcontrols.play();
             }
+        }
+
+        private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
