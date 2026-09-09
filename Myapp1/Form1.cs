@@ -81,7 +81,7 @@ namespace Myapp1
 
         private void timerReloj_Tick(object sender, EventArgs e)
         {
-            if (save == false)
+            if (save == true)
             {
                 if (contador == 30)
                 {
