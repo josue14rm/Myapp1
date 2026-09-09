@@ -10,7 +10,7 @@ namespace Myapp1
 {
     public partial class FormConfiguracion : Form
     {
-        public DateTime Hora;
+        public DateTime Hora { get; set; };
 
         public FormConfiguracion()
         {
