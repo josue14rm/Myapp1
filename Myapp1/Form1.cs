@@ -92,6 +92,7 @@ namespace Myapp1
                         toolStripStatusLabel1.Text = "ARCHIVO GUARDADO";
                     }
                     contador = 0;
+                    
                 }
             }
         }
