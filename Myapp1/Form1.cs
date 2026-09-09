@@ -83,9 +83,10 @@ namespace Myapp1
         {
             if (save == true)
             {
+                contador++;
                 if (contador == 30)
                 {
-                    contador++;
+                    
                     if (path != null)
                     {
                         Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
