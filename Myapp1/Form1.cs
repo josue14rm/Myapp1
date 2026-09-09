@@ -8,7 +8,7 @@ namespace Myapp1
         bool save = false;
         bool cambios = false;
 
-        int contador = 0, minutos = 0;
+        int contador = 0;
         String path;
 
         public Form1()
@@ -59,9 +59,8 @@ namespace Myapp1
                 guardarToolStripMenuItem.Enabled = false;
 
                 contador++;
-                DateTime tiempo = DateTime.Now;
-                lbReloj.Text = DateTime.Now.ToString("HH:mm:ss");
-                lbFecha.Text = tiempo.ToString("dd-MM-yyyy");
+                
+                
                 if (contador == 30)
                 {
                     contador = 0;
@@ -71,8 +70,8 @@ namespace Myapp1
             }
                 
 
-            }
         }
+        
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
