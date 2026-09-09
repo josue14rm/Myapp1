@@ -22,7 +22,7 @@ namespace Myapp1
                 minutos++;
                 contador = 0;
             }
-            lbEjecucion.Text = "Tiempo de ejcucion" + minutos.ToString();
+            lbEjecucion.Text = "Tiempo de ejcucion: " + minutos.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
