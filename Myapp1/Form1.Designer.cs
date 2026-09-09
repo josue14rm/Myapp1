@@ -122,9 +122,9 @@
             // 
             statusStrip1.ImageScalingSize = new Size(24, 24);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 418);
+            statusStrip1.Location = new Point(0, 422);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(800, 32);
+            statusStrip1.Size = new Size(800, 28);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             statusStrip1.ItemClicked += statusStrip1_ItemClicked;
@@ -132,8 +132,7 @@
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(77, 25);
-            toolStripStatusLabel1.Text = "Archivo ";
+            toolStripStatusLabel1.Size = new Size(0, 21);
             toolStripStatusLabel1.Click += toolStripStatusLabel1_Click;
             // 
             // timerReloj
