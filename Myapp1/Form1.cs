@@ -56,6 +56,8 @@ namespace Myapp1
                 }
                 Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
                 guardarToolStripMenuItem.Enabled = false;
+
+
             }
         }
 
