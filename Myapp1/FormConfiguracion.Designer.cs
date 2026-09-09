@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dateTimePicker1 = new DateTimePicker();
+            DTPConfigura = new DateTimePicker();
             button1 = new Button();
             SuspendLayout();
             // 
-            // dateTimePicker1
+            // DTPConfigura
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Time;
-            dateTimePicker1.Location = new Point(56, 63);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(300, 31);
-            dateTimePicker1.TabIndex = 0;
+            DTPConfigura.Format = DateTimePickerFormat.Time;
+            DTPConfigura.Location = new Point(56, 63);
+            DTPConfigura.Name = "DTPConfigura";
+            DTPConfigura.Size = new Size(300, 31);
+            DTPConfigura.TabIndex = 0;
             // 
             // button1
             // 
@@ -56,7 +56,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(470, 252);
             Controls.Add(button1);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(DTPConfigura);
             Name = "FormConfiguracion";
             Text = "FormConfiguracion";
             ResumeLayout(false);
@@ -64,7 +64,7 @@
 
         #endregion
 
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker DTPConfigura;
         private Button button1;
     }
 }

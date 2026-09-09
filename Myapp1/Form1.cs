@@ -10,10 +10,10 @@ namespace Myapp1
 
         private void configurarAlarmaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Configurar ventanaAlarma = new Configurar();
+            FormConfiguracion ventanaAlarma = new FormConfiguracion();
             if (ventanaAlarma.ShowDialog() == DialogResult.OK)
             {
-                tiempo = ventanaAlarma.hora;
+                tiempo = ventanaAlarma.Hora;
                 MessageBox.Show(tiempo.ToLongTimeString());
             }
         }

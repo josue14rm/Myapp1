@@ -10,7 +10,8 @@ namespace Myapp1
 {
     public partial class FormConfiguracion : Form
     {
-        public DateTime hora;
+        public DateTime Hora;
+
         public FormConfiguracion()
         {
             InitializeComponent();
@@ -18,11 +19,11 @@ namespace Myapp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            hora = FormConfiguracion.Value;
+            Hora = DTPConfigura.Value;
             this.DialogResult = DialogResult.OK;
             this.Close();
 
-            //if ()
+            
         }
     }
 }

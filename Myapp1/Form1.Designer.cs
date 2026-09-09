@@ -71,6 +71,8 @@
             // 
             // timerReloj
             // 
+            timerReloj.Enabled = true;
+            timerReloj.Interval = 1000;
             timerReloj.Tick += timerReloj_Tick;
             // 
             // lb1
