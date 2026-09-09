@@ -31,10 +31,10 @@
             label1 = new Label();
             label2 = new Label();
             BtCalcula = new Button();
-            button2 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            btLimpiar = new Button();
+            txtNumero1 = new TextBox();
+            txtNumero2 = new TextBox();
+            txtResultado = new TextBox();
             label3 = new Label();
             SuspendLayout();
             // 
@@ -68,37 +68,39 @@
             BtCalcula.TabIndex = 2;
             BtCalcula.Text = "CALCULA";
             BtCalcula.UseVisualStyleBackColor = true;
+            BtCalcula.Click += BtCalcula_Click;
             // 
-            // button2
+            // btLimpiar
             // 
-            button2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(388, 117);
-            button2.Name = "button2";
-            button2.Size = new Size(160, 47);
-            button2.TabIndex = 3;
-            button2.Text = "LIMPIAR";
-            button2.UseVisualStyleBackColor = true;
+            btLimpiar.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btLimpiar.Location = new Point(388, 117);
+            btLimpiar.Name = "btLimpiar";
+            btLimpiar.Size = new Size(160, 47);
+            btLimpiar.TabIndex = 3;
+            btLimpiar.Text = "LIMPIAR";
+            btLimpiar.UseVisualStyleBackColor = true;
+            btLimpiar.Click += button2_Click;
             // 
-            // textBox1
+            // txtNumero1
             // 
-            textBox1.Location = new Point(209, 62);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 4;
+            txtNumero1.Location = new Point(209, 62);
+            txtNumero1.Name = "txtNumero1";
+            txtNumero1.Size = new Size(150, 31);
+            txtNumero1.TabIndex = 4;
             // 
-            // textBox2
+            // txtNumero2
             // 
-            textBox2.Location = new Point(209, 132);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 5;
+            txtNumero2.Location = new Point(209, 132);
+            txtNumero2.Name = "txtNumero2";
+            txtNumero2.Size = new Size(150, 31);
+            txtNumero2.TabIndex = 5;
             // 
-            // textBox3
+            // txtResultado
             // 
-            textBox3.Location = new Point(398, 225);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 6;
+            txtResultado.Location = new Point(398, 225);
+            txtResultado.Name = "txtResultado";
+            txtResultado.Size = new Size(150, 31);
+            txtResultado.TabIndex = 6;
             // 
             // label3
             // 
@@ -115,10 +117,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(673, 346);
             Controls.Add(label3);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(button2);
+            Controls.Add(txtResultado);
+            Controls.Add(txtNumero2);
+            Controls.Add(txtNumero1);
+            Controls.Add(btLimpiar);
             Controls.Add(BtCalcula);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -133,10 +135,10 @@
         private Label label1;
         private Label label2;
         private Button BtCalcula;
-        private Button button2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private Button btLimpiar;
+        private TextBox txtNumero1;
+        private TextBox txtNumero2;
+        private TextBox txtResultado;
         private Label label3;
     }
 }
