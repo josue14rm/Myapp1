@@ -37,6 +37,7 @@
             DTPConfigura.Format = DateTimePickerFormat.Time;
             DTPConfigura.Location = new Point(56, 63);
             DTPConfigura.Name = "DTPConfigura";
+            DTPConfigura.ShowUpDown = true;
             DTPConfigura.Size = new Size(300, 31);
             DTPConfigura.TabIndex = 0;
             // 
