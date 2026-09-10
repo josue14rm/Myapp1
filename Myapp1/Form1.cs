@@ -93,6 +93,7 @@ namespace Myapp1
                         toolStripStatusLabel2.Visible=true;
                     }
                     contador = 0;
+                    
 
                 }
             }
