@@ -62,14 +62,14 @@
             // configurarAlarmaToolStripMenuItem
             // 
             configurarAlarmaToolStripMenuItem.Name = "configurarAlarmaToolStripMenuItem";
-            configurarAlarmaToolStripMenuItem.Size = new Size(270, 34);
+            configurarAlarmaToolStripMenuItem.Size = new Size(259, 34);
             configurarAlarmaToolStripMenuItem.Text = "Configurar Alarma";
             configurarAlarmaToolStripMenuItem.Click += configurarAlarmaToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(270, 34);
+            salirToolStripMenuItem.Size = new Size(259, 34);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -83,7 +83,7 @@
             // 
             lb1.AutoSize = true;
             lb1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb1.Location = new Point(229, 138);
+            lb1.Location = new Point(113, 139);
             lb1.Name = "lb1";
             lb1.Size = new Size(79, 96);
             lb1.TabIndex = 2;
