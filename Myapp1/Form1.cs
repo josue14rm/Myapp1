@@ -83,19 +83,20 @@ namespace Myapp1
         {
             if (save == true)
             {
+                
                 contador++;
-                if (contador == 30)
+                if (contador == 10)
                 {
                     if (path != null)
                     {
                         Texto.SaveFile(path, RichTextBoxStreamType.PlainText);
 
-                        toolStripStatusLabel2.Visible=true;
+                        toolStripStatusLabel2.Visible = true;
                     }
                     contador = 0;
-                    
 
                 }
+                 
             }
         }
 
@@ -105,6 +106,11 @@ namespace Myapp1
         }
 
         private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
         {
 
         }

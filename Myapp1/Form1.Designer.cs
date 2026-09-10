@@ -143,6 +143,8 @@
             toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             toolStripStatusLabel2.Size = new Size(193, 25);
             toolStripStatusLabel2.Text = "ARCHIVO GUARDADO";
+            toolStripStatusLabel2.Visible = false;
+            toolStripStatusLabel2.Click += toolStripStatusLabel2_Click;
             // 
             // timerReloj
             // 
