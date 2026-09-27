@@ -31,10 +31,12 @@
             splitContainer1 = new SplitContainer();
             btnCargar = new Button();
             dgvRegistros = new DataGridView();
+            ofdcsv = new OpenFileDialog();
             ID = new DataGridViewTextBoxColumn();
             NOMBRE = new DataGridViewTextBoxColumn();
             CORREO = new DataGridViewTextBoxColumn();
-            ofdcsv = new OpenFileDialog();
+            Column4 = new DataGridViewImageColumn();
+            Column5 = new DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -56,7 +58,7 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(dgvRegistros);
-            splitContainer1.Size = new Size(696, 276);
+            splitContainer1.Size = new Size(746, 276);
             splitContainer1.SplitterDistance = 64;
             splitContainer1.TabIndex = 0;
             // 
@@ -75,14 +77,19 @@
             dgvRegistros.AllowUserToAddRows = false;
             dgvRegistros.AllowUserToDeleteRows = false;
             dgvRegistros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRegistros.Columns.AddRange(new DataGridViewColumn[] { ID, NOMBRE, CORREO });
+            dgvRegistros.Columns.AddRange(new DataGridViewColumn[] { ID, NOMBRE, CORREO, Column4, Column5 });
             dgvRegistros.Dock = DockStyle.Fill;
             dgvRegistros.Location = new Point(0, 0);
             dgvRegistros.Name = "dgvRegistros";
             dgvRegistros.ReadOnly = true;
             dgvRegistros.RowHeadersWidth = 62;
-            dgvRegistros.Size = new Size(696, 208);
+            dgvRegistros.Size = new Size(746, 208);
             dgvRegistros.TabIndex = 0;
+            dgvRegistros.CellContentClick += dgvRegistros_CellContentClick;
+            // 
+            // ofdcsv
+            // 
+            ofdcsv.FileName = "ofdcsv";
             // 
             // ID
             // 
@@ -108,15 +115,31 @@
             CORREO.ReadOnly = true;
             CORREO.Width = 200;
             // 
-            // ofdcsv
+            // Column4
             // 
-            ofdcsv.FileName = "ofdcsv";
+            Column4.HeaderText = "Column4";
+            Column4.MinimumWidth = 8;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Resizable = DataGridViewTriState.True;
+            Column4.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column4.Width = 150;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Column5";
+            Column5.MinimumWidth = 8;
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            Column5.Resizable = DataGridViewTriState.True;
+            Column5.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column5.Width = 150;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(696, 276);
+            ClientSize = new Size(746, 276);
             Controls.Add(splitContainer1);
             Name = "Form1";
             Text = "Form1";
@@ -132,10 +155,12 @@
 
         private SplitContainer splitContainer1;
         private DataGridView dgvRegistros;
+        private Button btnCargar;
+        private OpenFileDialog ofdcsv;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn NOMBRE;
         private DataGridViewTextBoxColumn CORREO;
-        private Button btnCargar;
-        private OpenFileDialog ofdcsv;
+        private DataGridViewImageColumn Column4;
+        private DataGridViewImageColumn Column5;
     }
 }
