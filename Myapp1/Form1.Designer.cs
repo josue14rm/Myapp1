@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            btAct = new Button();
             btnCargar = new Button();
             dgvRegistros = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
@@ -53,6 +54,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(btAct);
             splitContainer1.Panel1.Controls.Add(btnCargar);
             // 
             // splitContainer1.Panel2
@@ -61,6 +63,16 @@
             splitContainer1.Size = new Size(772, 294);
             splitContainer1.SplitterDistance = 67;
             splitContainer1.TabIndex = 0;
+            // 
+            // btAct
+            // 
+            btAct.Location = new Point(130, 21);
+            btAct.Name = "btAct";
+            btAct.Size = new Size(124, 34);
+            btAct.TabIndex = 1;
+            btAct.Text = "ACTUALIZAR";
+            btAct.UseVisualStyleBackColor = true;
+            btAct.Click += btAct_Click;
             // 
             // btnCargar
             // 
@@ -142,7 +154,7 @@
             ClientSize = new Size(772, 294);
             Controls.Add(splitContainer1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "CSV";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
@@ -162,5 +174,6 @@
         private DataGridViewTextBoxColumn CORREO;
         private DataGridViewImageColumn Column4;
         private DataGridViewImageColumn Column5;
+        private Button btAct;
     }
 }
