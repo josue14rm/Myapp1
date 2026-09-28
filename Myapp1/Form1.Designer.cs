@@ -31,12 +31,12 @@
             splitContainer1 = new SplitContainer();
             btnCargar = new Button();
             dgvRegistros = new DataGridView();
-            ofdcsv = new OpenFileDialog();
             ID = new DataGridViewTextBoxColumn();
             NOMBRE = new DataGridViewTextBoxColumn();
             CORREO = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewImageColumn();
             Column5 = new DataGridViewImageColumn();
+            ofdcsv = new OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -58,13 +58,13 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(dgvRegistros);
-            splitContainer1.Size = new Size(746, 276);
-            splitContainer1.SplitterDistance = 64;
+            splitContainer1.Size = new Size(772, 294);
+            splitContainer1.SplitterDistance = 67;
             splitContainer1.TabIndex = 0;
             // 
             // btnCargar
             // 
-            btnCargar.Location = new Point(12, 12);
+            btnCargar.Location = new Point(12, 21);
             btnCargar.Name = "btnCargar";
             btnCargar.Size = new Size(112, 34);
             btnCargar.TabIndex = 0;
@@ -83,13 +83,9 @@
             dgvRegistros.Name = "dgvRegistros";
             dgvRegistros.ReadOnly = true;
             dgvRegistros.RowHeadersWidth = 62;
-            dgvRegistros.Size = new Size(746, 208);
+            dgvRegistros.Size = new Size(772, 223);
             dgvRegistros.TabIndex = 0;
             dgvRegistros.CellContentClick += dgvRegistros_CellContentClick;
-            // 
-            // ofdcsv
-            // 
-            ofdcsv.FileName = "ofdcsv";
             // 
             // ID
             // 
@@ -135,11 +131,15 @@
             Column5.SortMode = DataGridViewColumnSortMode.Automatic;
             Column5.Width = 150;
             // 
+            // ofdcsv
+            // 
+            ofdcsv.FileName = "ofdcsv";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(746, 276);
+            ClientSize = new Size(772, 294);
             Controls.Add(splitContainer1);
             Name = "Form1";
             Text = "Form1";
